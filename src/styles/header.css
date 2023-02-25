@@ -1,0 +1,40 @@
+.header{
+    margin:20px;
+    display: flex;
+    justify-content:space-between;
+    gap: 30px;
+}
+.logo,.pin_img{
+border-radius: 10px;
+height: 50px;
+border-color: transparent;
+}
+
+.search{
+    display: flex;
+    padding :5px;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: flex-end;
+    margin: 10px;
+    /* background-color: grey; */
+    border-radius: 10px;
+    border-color: transparent;
+    border-bottom: 1px solid black;
+    height: 30px;
+    width: 100%;
+    gap:5px;
+}
+.search_input{
+    background-color:transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+.search_icon{
+    height: 80%;
+}
+.search_input:focus{
+    background-color:transparent;
+}
