@@ -11,12 +11,18 @@ class Header extends React.Component {
   }
 
   render() {
+    const data = "test";
     return (
       <div className="header">
         <img className="logo" src={logo} alt="logo" />
         <div className="search">
-          <input className="search_input" type="text" name="search" />
-          <img src={search} alt='search_icon' className="search_icon" />
+          <input
+            className="search_input"
+            type="text"
+            name="search"
+            onKeyUp={(e) => e.code === 'Enter' ? this.props.getState(data) : -1}
+          />
+          <img src={search} alt="search_icon" className="search_icon" />
         </div>
         <div className="pin">
           <img className="pin_img" src={pin} alt="pin" />
