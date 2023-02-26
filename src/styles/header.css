@@ -15,10 +15,11 @@
     }
 }
 .header{
-    margin:20px;
+    padding:20px;
     display: flex;
     justify-content:space-between;
     gap: 15px;
+
 }
 .logo,.pin_img{
 border-radius: 10px;

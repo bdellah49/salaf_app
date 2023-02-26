@@ -1,7 +1,8 @@
 import "./styles/App.css";
 import React from "react";
 import Header from "./components/Header"
-import Main from "./components/Main.js";
+import Main from "./components/Main";
+import Footer from "./components/Footer"
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -16,8 +17,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header getState={this.HeaderToApp} />
+        <Header className='header' getState={this.HeaderToApp} />
         <Main search={this.state.data}/>
+        <Footer className='footer'/>
       </div>
     );
   }

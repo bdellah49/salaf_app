@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/main.css";
 import data from "./main data/main.json";
+import video from "../logos/vd.mp4";
 import { v4 as uniqueId } from "uuid";
 
 class Main extends React.Component {
@@ -8,6 +9,9 @@ class Main extends React.Component {
     super(props);
 
     this.state = {};
+  }
+  componentDidMount() {
+    window.onscroll = function (e) {};
   }
   OutputValide(search) {
     return search === "" ? false : true;
@@ -20,21 +24,17 @@ class Main extends React.Component {
     }
   }
   render() {
-    console.log(this.getOutput(this.props.search));
+    console.log(this.props.search);
     return (
       <div className="main">
-        {this.getOutput(this.props.search.key).map((item) => {
-          return (
-            <iframe
-              key={uniqueId}
-              width="100%"
-              height="600"
-              src="https://www.youtube-nocookie.com/embed/ly36kn0ug4k"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
-          );
-        })}
+        <video
+          src={video}
+          width="100%"
+          height="100%"
+          controls
+          fullscreen="false"
+          muted
+        />
       </div>
     );
   }

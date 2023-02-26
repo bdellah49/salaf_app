@@ -1,3 +1,4 @@
-iframe{
-    border: None;
+.main{
+    display: grid;
+    gap: 100px;
 }

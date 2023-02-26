@@ -1,0 +1,17 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid grey;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    color:white;
+    background-color:transparent;
+    height:50px;
+
+}
