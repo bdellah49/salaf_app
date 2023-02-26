@@ -26,11 +26,12 @@ class Main extends React.Component {
         {this.getOutput(this.props.search.key).map((item) => {
           return (
             <iframe
-              title={uniqueId}
+              key={uniqueId}
               width="100%"
-              height="700"
-              allowfullscreen="false"
-              src="https://www.youtube.com/embed/-VsnhrnIAko?autoplay=1?rel=0&amp;controls=0&amp;showinfo=0;modestbranding=1" allow="autoplay;encrypted-media" frameborder="0"
+              height="600"
+              src="https://www.youtube-nocookie.com/embed/ly36kn0ug4k"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>
           );
         })}

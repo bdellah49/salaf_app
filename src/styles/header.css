@@ -37,7 +37,7 @@ animation: anim 1.5s;
     /* background-color: grey; */
     border-radius: 10px;
     border-color: transparent;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     height: 30px;
     width: 100%;
     gap:5px;
